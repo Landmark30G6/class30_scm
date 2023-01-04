@@ -23,7 +23,7 @@ node{
     stage('6approvalgate'){
         sh"echo 'pls review and approve'"
         timeout(time: 5, unit:'DAYS'){
-            input message:'pls review application, and approve for final deployment'
+            input message:'kindly take a look at the application, and approve for final deployment'
         }
         stage('7deploy2prod'){
             sh"echo 'deploying to prod now '"
